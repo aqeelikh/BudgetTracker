@@ -27,4 +27,4 @@ NOTION_DATABASE_ID= <Your Notion Database ID>
 
 ## References
 
-https://www.youtube.com/watch?v=3vhWx2LT-SY&t=473s
+https://www.youtube.com/watch?v=3vhWx2LT-SY&t
