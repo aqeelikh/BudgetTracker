@@ -24,3 +24,7 @@ and add the following:
 NOTION_API_KEY= <Your Notion API Key>
 NOTION_DATABASE_ID= <Your Notion Database ID>
 ```
+
+## References
+
+https://www.youtube.com/watch?v=3vhWx2LT-SY&t=473s
