@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:budget_tracker/model/item_model.dart';
 import 'package:budget_tracker/main.dart';
+import 'package:budget_tracker/config/palette.dart';
 
 class SpendingChart extends StatelessWidget {
   final List<Item> items;

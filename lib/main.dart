@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:budget_tracker/budget_repo.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:intl/intl.dart';
-import 'package:budget_tracker/spending_chart.dart';
+import 'package:budget_tracker/widget/spending_chart.dart';
 import 'model/failure_model.dart';
 import 'package:intl/intl.dart';
+import 'package:budget_tracker/config/palette.dart';
 
 // To load .env file change main to an async function
 void main() async {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Notion Budget Tracker',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: Palette.green,
       ),
       home: BudgetScreen(),
     );
@@ -104,20 +105,5 @@ class _BudgetScreenState extends State<BudgetScreen> {
         ),
       ),
     );
-  }
-}
-
-Color getCategoryColor(String category) {
-  switch (category) {
-    case 'Entertainment':
-      return Colors.red[400]!;
-    case 'Food':
-      return Colors.green[400]!;
-    case 'Personal':
-      return Colors.blue[400]!;
-    case 'Transportation':
-      return Colors.purple[400]!;
-    default:
-      return Colors.orange[400]!;
   }
 }
